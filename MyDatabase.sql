@@ -173,4 +173,22 @@ SELECT TOP 2 *
 FROM Products
 ORDER BY ProductID DESC
 
+-- Create Views
+
+create view BasicJoin
+as
+select   
+o.OrderID,  
+OrderDate,  
+ustomerID,  
+OrderDetailID,  
+ProductID,  
+Quantity,  
+UnitPrice
+from orders o
+inner join OrderDetails od
+on o.orderid = od.OrderID  
+
+select *, dbo.GetCustomerEmail(customerid) as email  
+from BasicJoin
 			   
