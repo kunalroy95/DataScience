@@ -163,6 +163,7 @@ BEGIN
   SELECT * FROM Products
 
 --More select statements
+
 SELECT *
 FROM orderdetails
 WHERE orderid = 1
@@ -178,17 +179,65 @@ ORDER BY ProductID DESC
 create view BasicJoin
 as
 select   
-o.OrderID,  
-OrderDate,  
-ustomerID,  
-OrderDetailID,  
-ProductID,  
-Quantity,  
-UnitPrice
+ o.OrderID,  
+ OrderDate,  
+ CustomerID,  
+ OrderDetailID,  
+ ProductID,  
+ Quantity,  
+ UnitPrice
 from orders o
 inner join OrderDetails od
 on o.orderid = od.OrderID  
 
 select *, dbo.GetCustomerEmail(customerid) as email  
 from BasicJoin
-			   
+
+--inner join, three tables. 
+
+SELECT CustomerFirstName, CustomerEmail, sum(quantity * unitprice) AS Total 
+FROM orders o 
+INNER JOIN Customers c  
+ON o.CustomerID = c.CustomerID
+INNER JOIN OrderDetails od  
+ON o.OrderID = od.OrderID
+GROUP BY CustomerFirstName, CustomerEmail
+ORDER BY total DESC
+
+-- Using IF statement
+
+DECLARE @email VARCHAR(60)
+SELECT @email = CustomerEmail
+FROM  Customers
+WHERE customerid = 2
+
+IF @email like '%bill%'
+BEGIN  
+PRINT @email
+END
+ELSE
+BEGIN  
+PRINT 'Not Bill'
+END
+
+-- Operators + Arithmetic
+
+SELECT   
+ProductID,   
+ProductMSRP,  
+ProductMSRP * 1.1 AS ProductMSRPPlusTenPercent
+FROM Products
+
+-- Stored Procedures
+
+CREATE PROCEDURE task1
+AS
+
+SELECT *
+FROM Products
+WHERE Productid = 1 AND ProductName LIKE 'chai[r,a,c]'   
+OR Productid = 2
+
+GO;
+
+EXEC task1;
