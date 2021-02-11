@@ -1,4 +1,4 @@
----Create database and tables
+--Create database and tables
 CREATE DATABASE SalesExtended
 GO
 USE SalesExtended
