@@ -1,1 +1,1 @@
-Hi, Welcome to my portfolio of Data Science Projects!
+Hi, welcome to my portfolio of Data Science Projects!
