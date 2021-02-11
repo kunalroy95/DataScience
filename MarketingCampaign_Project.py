@@ -1,4 +1,4 @@
-#We will be predicting whether customers are likley to repsond to marketing campaigns 
+##We will be predicting whether customers are likley to repsond to marketing campaigns 
 #and will chose the best model to do so via multiple evaluation metrics
 
 import pandas as pd
