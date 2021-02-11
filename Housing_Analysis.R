@@ -5,7 +5,7 @@ summary(housing)
 # 207 NAs found for total_bedrooms variable
 dim(housing)          # 20640x10
 
-# Check levels for factor variable ocean_proximity
+## Check levels for factor variable ocean_proximity
 levels(housing$ocean_proximity)
 # [1] "<1H OCEAN"  "INLAND"     "ISLAND"     "NEAR BAY"   "NEAR OCEAN"
 
