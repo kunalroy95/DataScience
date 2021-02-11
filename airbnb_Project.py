@@ -1,4 +1,4 @@
-#Lets train a logistic regression model on the airbnb data to classify whether the nightly price of 
+##Lets train a logistic regression model on the airbnb data to classify whether the nightly price of 
 #a listing is affordable or expensive through a logistic regression model made from scartch
 #we will then compare the model made from scartch to sk learns model in terms of time to run model and accuracy
 import pandas as pd
