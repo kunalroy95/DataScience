@@ -1,4 +1,4 @@
-#LA CRIME DATA ANALYSIS AND INSIGHTS(Over a million crime records from the past 10 years)
+#LA CRIME DATA ANALYSIS AND INSIGHTS- Over a million crime records from the past 10 years
 
 arrests <- read.csv(file="arrests.csv", head = TRUE, sep=",")
 head(arrests)
