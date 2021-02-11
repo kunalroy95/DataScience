@@ -1,4 +1,4 @@
-#This analysis is for the Marketing Campaign data set from Kaggle + linked with US census data
+##This analysis is for the Marketing Campaign data set from Kaggle + linked with US census data
 
 market <- read.csv(file="marketing_campaign.csv", head = TRUE, sep=";")
 head(data)
