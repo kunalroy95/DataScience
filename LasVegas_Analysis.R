@@ -1,5 +1,5 @@
 
-#This is a trip advisor data set, where tripadvisor users have gone to vegas hotels and have rated
+##This is a trip advisor data set, where tripadvisor users have gone to vegas hotels and have rated
 #experinece and have helped log information about the hotel and details about it
 #This kind of data set could be very useful in marketing to specific users
 #I got this data set from the UCI Machine learning repository 
