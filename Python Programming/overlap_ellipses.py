@@ -1,14 +1,4 @@
-"""
-Created on February 18th, 2021
 
-author: Kunal Roy
-
-I have not given or received any
-unauthorized assistance on this assignment
-
-Youtube Video Link: https://youtu.be/3ZLVDwbliZ4
-    
-"""
 
 import math
 import random
