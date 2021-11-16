@@ -1,14 +1,3 @@
-"""
-Created on February 4th, 2021
-
-author: Kunal Roy
-
-I have not given or received any
-unauthorized assistance on this assignment
-
-Youtube Video Link:
-    
-"""
 
 import random
 
