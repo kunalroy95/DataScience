@@ -1,14 +1,4 @@
-"""
-Created on February 12th, 2021
 
-author: Kunal Roy
-
-I have not given or received any
-unauthorized assistance on this assignment
-
-Youtube Video Link: https://youtu.be/kJVay-ifSA4
-    
-"""
 
 from urllib.request import urlopen, Request
 from html.parser import HTMLParser
