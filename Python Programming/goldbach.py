@@ -1,14 +1,4 @@
-"""
-Created on January 22nd, 2021
 
-author: Kunal Roy
-
-I have not given or received any
-unauthorized assistance on this assignment
-
-Youtube Video Link: https://youtu.be/SbZYJ0dVsS8
-    
-"""
 
 import math
 
