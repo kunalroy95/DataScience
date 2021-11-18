@@ -1,5 +1,4 @@
-## HW5 -- Kunal Roy
-
+## Vector Autoregressive model and Harmonic regression model
 
 ### Q1:
 
